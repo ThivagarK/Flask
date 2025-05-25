@@ -1,1 +1,1 @@
-this is a tutorial repository.
+this is a flask tutorial repository.
