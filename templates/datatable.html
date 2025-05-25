@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Results Table</title>
+    <!--<style>
+        table,td,th{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>-->
+</head>
+<body>
+    <h2>Final Results</h2>
+    <table border="2">
+        {# jinja2 template for comments. and below conditional statement for loop.#}
+        {% for key,value in results.items() %}
+        <tr>
+            <th>{{key}}</th>
+            <td>{{value}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

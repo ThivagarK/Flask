@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>If Results</title>
+    </head>
+    <body>
+        <h2>
+            Based on the marks. You have received {{results}} marks.
+            {#This is if condition jinja2 template.#}
+            {% if results >= 50 %}
+            <h3>You have Passed with {{results}} marks.</h3>
+            {% else %}
+            <h3>You have Failed with {{results}} marks.</h3>
+            {% endif %}
+        </h2>
+    </body>
+</html>
